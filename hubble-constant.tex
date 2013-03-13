@@ -1,0 +1,90 @@
+%% hubble-constant.tex
+
+\documentclass{report}
+\pagestyle{empty}
+
+% Packages
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[usenames]{color}
+
+% Commands
+\newcommand{\grad}{\boldsymbol{\nabla}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
+\newcommand{\dfdx}[2]{\frac{\partial #1}{\partial #2}}
+
+% Easy-vision mode
+\pagecolor{black}
+\color{green}
+
+% Use European-style paragraphs.
+% IMPORTANT: \begin{document} must follow for this to work.
+\setlength{\parindent}{0pt} 
+\setlength{\parskip}{1.3ex} 
+\begin{document}
+
+\begin{center}
+\textbf{\Huge The Hubble Constant} \\
+\vspace{2ex}
+\textrm{\Large Peter Franu\v si\'c} \\
+\end{center}
+\vspace{0.5in}
+
+Space expands.
+The astronomer Edwin Hubble discovered that the galaxies appear to be receding from us,
+and that the apparant velocity of a galaxy is directly proportional to its distance from us.
+This phenomena is explained by the expansion of space.
+
+Space expands at a constant rate.
+The rate of expansion is currently estimated to be about 
+70.4 kilometers per second (km/s) per Megaparsec (Mpc).
+This rate is represented by the Hubble constant $H_0$.
+\begin{equation*}
+  H_0 = 70.4 \; \textstyle{\frac{\mathrm{km/s}}{\mathrm{Mpc}}}
+\end{equation*}
+
+We can use the Hubble constant $H_0$ to compute the relative velocity $v$ 
+of two points in space that are separated by a distance of $d$.
+The formula is $  v = H_0 \times d$.
+This means that two points in space, separated by a distance of one Megaparsec,
+will move away from each other at a velocity of 70.4 kilometers per second.
+Another two points, separated by a distance of ten Megaparsecs,
+will move away from each other at a velocity of 704 kilometers per second.
+The greater the distance, the greater the velocity.
+
+But there's a problem here.
+A velocity of 70.4 kilometers per second is about 158 thousand miles per hour.
+A distance of 1 Megaparsec is about 31 million trillion kilometers.
+Velocities and distances such as these are huge.
+In fact, they're beyond comprehension.
+We need something that the average person can understand.
+
+Let the velocity be in millimeters per century (mm/Cy).
+And let the unit of distance be one hundred miles (Cmi).
+So now, what is the Hubble constant $H_0$ in terms of these units?
+%\begin{comment}
+\begin{eqnarray*}
+  H_0 &=& 70.4 \; \textstyle{\frac{\mathrm{km/s}}{\mathrm{Mpc}}} \\
+      &=& \frac{(70.4 \; \textstyle{\frac{\mathrm{km}}{\mathrm{s}}})
+                (10^6 \; \textstyle{\frac{\mathrm{mm}}{\mathrm{km}}})
+                (3155760000 \; \textstyle{\frac{\mathrm{s}}{\mathrm{Cy}}})
+                (160.9 \; \textstyle{\frac{\mathrm{km}}{\mathrm{Cmi}}})}
+               {(1 \; \mathrm{\scriptstyle{Mpc}}) 
+		(30.856776 \times 10^{18} \; \textstyle{\frac{\mathrm{km}}{\mathrm{Mpc}}})} \\
+      &=& 1.16 \; \textstyle{\frac{\mathrm{mm/Cy}}{\mathrm{Cmi}}}
+\end{eqnarray*}
+%\end{comment}
+
+This means that two points in space, separated by a distance of 100 miles,
+will move away from each other at a velocity of about 1.16 mm per century.
+This is comprehensible.  \emph{I.e.}, it's very, very slow.
+Space expands very, very slowly.
+But space is also immense.
+At very great distances (\emph{e.g.} one billion light-years for quasars),
+relative velocities approach the speed of light.
+
+\end{document}
+
